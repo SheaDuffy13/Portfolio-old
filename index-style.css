@@ -6,30 +6,32 @@ body {
     /* flex-direction: column; */
     background: #131313;
 }
-
 .bg {
     position: absolute;
-    background: url("images/smoke-bg.jpg") no-repeat center;
-    background-attachment: fixed;
+    background: url("images/smoke-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
     height: 100%;
     width: 100%;
     opacity: 0.4;
-    background-size: cover;
-    min-height: 100%;
+    /* min-height: 100%; */
     z-index: -1;
 }
 
+/* Header */
 .name {
     display: flex;
     justify-content: center;
 }
-
 h1 {
     font-size: 2.5rem;
     color:#BD752B;
     margin: 20px 80px;
 }
-
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -37,8 +39,8 @@ h1 {
     font-size: 1.5rem;
     background: #28282800;
     letter-spacing: 6px;
+    width: 70%;
 }
-
 .nav-links a {
     display: flex;
     justify-content: space-between;
@@ -46,18 +48,15 @@ h1 {
     text-decoration: none;
     color: #BD752B;
 }
-
 .burger {
     display: none;
 }
-
 .burger div {
     width: 25px;
     height: 3px;
     background: #BD752B;
     margin: 5px;
 }
-
 .logo {
     display: flex;
     background:#131313;
@@ -69,68 +68,75 @@ h1 {
     /* margin-top: 90px; */
 }
 
+/* Body */
+.page-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 #hero {
     display: flex;
     position: relative;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: 90px;
-    padding: 3rem;
-    background-color: #131313c2;
+    /* margin: auto; */
+    width: 800px;
+    height: 40%;
+    margin: 40px;
+    padding: 1rem;
+    background-color: #1313135d;
     border-radius:5%; 
 }
-
 #hero img {
     width: 300px;
     border-radius: 50%;
-    margin: 50px;
+    margin: 10px;
+    top:0;
+    border: solid 2px #BD752B;
 }
-
 #hero p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #BD752B;
+    margin-left: 10px;
 }
 
+/*UI animation */
 nav a:hover {
     text-decoration: line-through;
     opacity: 0.5;
 }
-
 nav img:hover {
     opacity: 0.5;
 }
-
 /* header .name:hover {
     opacity: 0.5;
 } */
-
 nav a.active {
-    text-decoration:line-through;
+    text-decoration:underline;
 }
 
 footer {
     font-size: 1.5rem;
     position: absolute;
-    left: 50%;
+    text-align: center;
+    width: 100%;
     bottom: 0;
-    color: #bd742b82;
     margin-bottom: 10px;
+    color: #bd742b82;
 }
 
 /* ipad screen */
 @media screen and (min-width: 679px)  and (max-width: 1080px) {
     header .name { 
-        background: #ff000010; 
+        background: #0000ff10; 
     }
     .nav-links a {
-        padding:20px;
+        padding: 10px;
         font-size: 1.5rem;
     }
     .nav-links {
         letter-spacing: 3px;
+        width: 90%;
     }
     h1 {
         font-size: 2.5rem;
@@ -142,6 +148,9 @@ footer {
 @media screen and (max-width: 680px) {
     header .name { 
         background: #0000ff10; 
+    }
+    .bg {
+        height: 130%;
     }
     .logo {
         display: none;
@@ -162,22 +171,38 @@ footer {
         font-size: 1.7rem;
         margin: 20px 30px;
     }
+    #hero {
+        position: relative;
+        flex-wrap: wrap;
+        width: 70%;
+        height: 40%;
+        margin-top: 110px;
+        text-align: center;
+        padding: 2rem;
+        background-color: #13131300;
+        border-radius:5%; 
+    }
+    #hero img {
+        width: 250px;
+        border-radius: 50%;
+        margin: 0px;
+    }
     .nav-links a {
         font-size: 1.5rem;
         opacity: 1;
     }
     .nav-links {
         font-size: 1rem;
-        width: 30%;
+        width: 40%;
         position: absolute;
-        right: 1%;
-        height: 52vh;
+        right: 0%;
+        height: 43vh;
         top: 25vh;
         background: #00000039;
         flex-direction: column;
         border-radius: 8%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transition: transform 0.3s ease-in;
     }
     body {
         overflow-x: hidden;
@@ -185,7 +210,7 @@ footer {
     .burger {
         display: block;
         position: absolute;
-        right: 7%;
+        right: 15%;
         top: 15vh;
         cursor: pointer;
     }
@@ -194,10 +219,10 @@ footer {
     }
 }
 
+/* drop-down navbar animation */
 .nav-active {
     transform: translateX(0%);
 }
-
 @keyframes navLinkFade {
     from {
         opacity: 0;
