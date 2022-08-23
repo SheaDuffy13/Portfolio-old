@@ -1,0 +1,33 @@
+@import url("global.css");
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    color: #BD752B;
+}
+.blog-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 300px;
+    background: #13131353;
+    border-radius: 5%;
+    padding: 12px;
+    margin: 20px;
+}
+.blog-list a {
+    all: unset;
+    font-size: 1.5rem;
+    margin: 20px 30px;
+    color: #BD752B;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+.blog-list img {
+    width: 70%;
+    /* display: none; */
+}
