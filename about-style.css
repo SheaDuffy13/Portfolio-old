@@ -1,12 +1,17 @@
 @import url("global.css");
 
 main {
-    display: inline-flex;
+    /* display: inline-flex; */
     justify-content: center;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 1%;
     margin-left: -1.6vw;
+}
+.page-heading {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
 }
 #hero {
     display: flex;
@@ -19,10 +24,11 @@ main {
     border-radius:5%; 
 }
 #hero img {
+    align-self: flex-start;
     width: 15vw;
     border-radius: 10%;
-    margin: 10px;
-    top:0;
+    margin: 30px 20px 10px 10px;
+    /* top:0; */
     border: solid 2px #BD752B;
 }
 #hero p {
@@ -30,15 +36,29 @@ main {
     color: #BD752B;
     margin-left: 15px;
 }
+#resume-link:hover {
+    background: #BD752B;
+}
 .contact-me {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #BD752B;
 }
+.contact-me a{
+    all: unset;
+    cursor: pointer;
+    color: #BD752B;
+}
+.contact-me a:hover {
+    color: #db8733;
+}
 
 /* ipad screen */
 @media screen and (min-width: 679px)  and (max-width: 1080px) {
+    main {
+        margin-top: 0%;
+    }
     #hero {
         margin: 5%;
     }
@@ -50,8 +70,9 @@ main {
 /* phone screen.. 767px?*/
 @media screen and (max-width: 680px) {
     main {
-        margin-top: 20%;
+        /* margin-top: 20%; */
         margin-left: -1vw;
+        margin-top: 0%;
     }
     #hero {
         position: relative;
@@ -61,13 +82,18 @@ main {
         height: 40%;
         /* margin-top: 50%; */
         text-align: center;
-        padding: 2rem;
+        /* padding: 2rem; */
         background-color: #13131300;
         border-radius:5%; 
     }
     #hero img {
+        align-self: center;
         width: 30vw;
         border-radius: 50%;
         /* margin: 0%; */
+    }
+    .page-heading {
+        margin-top: 90px;
+        margin-right: 7px;
     }
 }

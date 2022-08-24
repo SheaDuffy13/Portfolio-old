@@ -32,13 +32,17 @@ main {
     margin-left: 10px;
 }
 
+#hero img:hover {
+    border-color: #bd742b95;
+}
+
 /* ipad screen */
 @media screen and (min-width: 679px)  and (max-width: 1080px) {
     #hero img {
         width: 150px;
     }
     main {
-        height: 50vh;
+        height: 48vh;
         margin-top: 80px;
     }
 }
@@ -46,8 +50,8 @@ main {
 /* phone screen.. 767px?*/
 @media screen and (max-width: 680px) {
     main {
-        margin-top: 30%;
-        margin-left: -1vw;
+        margin-top: 150px;
+        /* margin-left: -1vw; */
         margin-bottom: 10vh;
     }
     #hero {

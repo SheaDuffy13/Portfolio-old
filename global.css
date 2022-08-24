@@ -21,11 +21,6 @@ body {
     left: 0;
     z-index: -1;
 }
-main {
-    display: flex;
-    position: relative;
-    justify-content: center;
-}
 /* Header */
 .name {
     display: flex;
@@ -78,11 +73,17 @@ nav{
 }
 
 /* Body */
+main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
 
 /*UI animation */
 .nav-links a:hover {
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
     opacity: 0.5;
+    color: #b5804b;
 }
 nav img:hover {
     opacity: 0.5;
@@ -93,7 +94,10 @@ nav img:hover {
 .nav-links a.active {
     text-decoration:line-through;
 }
-
+#social-links a:hover {
+    opacity: 1;
+}
+/* Footer */
 footer {
     position:relative;
     margin-top:3%;
@@ -106,17 +110,12 @@ footer {
 #social-links {
     display: flex;
     justify-content: center;
-    /* background: #777777; */
     padding: 0.5rem 0;
-    /* width: 100%; */
-
-
 }
 #social-links a{
     padding: 1vw;  
     opacity: 0.6; 
 }
-
 #social-links div{
     bottom: 0;
 }
@@ -139,10 +138,6 @@ footer {
         color:#BD752B;
         margin: 20px 43px;
     }
-    main {
-        margin-left: -2vw;
-        height: 50vh;
-    }
 }
 /* phone screen.. 767px?*/
 @media screen and (max-width: 680px) {
@@ -161,7 +156,7 @@ footer {
         width: 90px;
         border-radius: 50%;
         border: 2px solid #BD752B;
-        top: 10%;
+        top: 70px;
         margin-right: 2vw;
     }
     .name h1 {
@@ -200,7 +195,7 @@ footer {
         display: block;
         position: absolute;
         right: 18%;
-        top: 14vh;
+        top: 100px;
         cursor: pointer;
     }
     #social-links a{
