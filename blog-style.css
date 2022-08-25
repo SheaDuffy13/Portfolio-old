@@ -11,14 +11,14 @@ main {
 }
 h2 {
     margin-right: 40px;
-    margin-bottom: 3px;
+    margin-bottom: 15px;
 }
 .blog-list {
     display: flex;
     justify-content: space-between;
     /* flex-direction: column; */
-    align-items: center;
-    margin: 35px 5px 0px 5px;
+    align-items:center;
+    margin: 35px px 0px 5px;
     color: #BD752B;
     width: 100%;
     height: auto;
@@ -27,31 +27,33 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items:center;
-    width: 250px;
+    width: 270px;
     background: #13131353;
+    border: solid 2px #bd742b8a;
     border-radius: 5%;
-    padding: 10px;
+    padding: 10px 0px 0px 0px;
+    margin: 10px;
 }
 .blog-list a {
     all: unset;
     font-size: 1.3rem;
-    margin: 20px;
+    margin: 10px;
     color: #BD752B;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
 }
 .blog-list img {
-    width: 70%;
-    margin: 15px;
+    width: 80%;
+    margin-top: 15px;
 }
 
+.blog-list img:hover, a:hover {
+    opacity: 0.9;
+}
 
 /* ipad screen */
 @media screen and (min-width: 679px)  and (max-width: 1080px) {
-    main {
-        /* height: 215vh; */
-    }
     .blog-list {
         flex-wrap: wrap;
         justify-content: center;

@@ -15,8 +15,7 @@ h2 {
 .projects {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* margin: 0px 5px 0px 5px; */
+    margin: 0px 50px 0px 0px;
     color: #BD752B;
     width: 100%;
 }
@@ -29,11 +28,12 @@ h2 {
     border-radius: 5%;
     padding: 10px;
     margin: 30px;
+    border: solid 2px #bd742b8a;
 }
 .projects a {
     all: unset;
     font-size: 1.5rem;
-    margin: 20px;
+    margin: 10px;
     color: #BD752B;
     text-decoration: none;
     cursor: pointer;
@@ -41,7 +41,7 @@ h2 {
 }
 .projects img {
     width: 90%;
-    margin: 15px;
+    margin: 10px;
 }
 
 
@@ -73,6 +73,7 @@ h2 {
         flex-direction: column;
         align-items: center;
         color: #BD752B;
+        margin-right: 0;
     }
     h2 {
         margin-right: 0px;
