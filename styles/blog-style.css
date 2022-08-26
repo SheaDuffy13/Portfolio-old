@@ -7,7 +7,6 @@ main {
     /* justify-content: space-between; */
     /* justify-content: center; */
     flex-wrap: wrap;
-
 }
 h2 {
     margin-right: 40px;
@@ -51,8 +50,13 @@ h2 {
 .blog-list img:hover, a:hover {
     opacity: 0.9;
 }
+p {
+    display: flex;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
 
-/* ipad screen */
+/* medium screen */
 @media screen and (min-width: 679px)  and (max-width: 1080px) {
     .blog-list {
         flex-wrap: wrap;
@@ -69,7 +73,7 @@ h2 {
         width: 90%;
     }
 }
-/* phone screen.. 767px?*/
+/* small screen */
 @media screen and (max-width: 680px) {
     main {
         margin-top: 20%;

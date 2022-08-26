@@ -1,8 +1,7 @@
 @import url("global.css");
 
 main {
-    /* display: inline-flex; */
-    justify-content: center;
+    /* justify-content: center; */
     width: 100%;
     margin-top: 2%;
     margin-bottom: 1%;
@@ -28,11 +27,10 @@ main {
     width: 15vw;
     border-radius: 10%;
     margin: 30px 20px 10px 10px;
-    /* top:0; */
     border: solid 2px #BD752B;
 }
 #hero p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #BD752B;
     margin-left: 15px;
 }
@@ -54,7 +52,7 @@ main {
     color: #db8733;
 }
 
-/* ipad screen */
+/* medium screen */
 @media screen and (min-width: 679px)  and (max-width: 1080px) {
     main {
         margin-top: 0%;
@@ -67,22 +65,18 @@ main {
     }
 }
 
-/* phone screen.. 767px?*/
+/* small screen */
 @media screen and (max-width: 680px) {
     main {
-        /* margin-top: 20%; */
         margin-left: -1vw;
         margin-top: 0%;
     }
     #hero {
         position: relative;
         flex-direction: column;
-        /* flex-wrap: wrap; */
         width: 70%;
         height: 40%;
-        /* margin-top: 50%; */
         text-align: center;
-        /* padding: 2rem; */
         background-color: #13131300;
         border-radius:5%; 
     }
@@ -91,7 +85,6 @@ main {
         width: 30vw;
         border-radius: 50%;
         margin-left: 24px;
-        /* margin: 0%; */
     }
     .page-heading {
         margin-top: 90px;

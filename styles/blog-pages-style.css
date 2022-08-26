@@ -1,4 +1,4 @@
-@import url("../global.css");
+@import url("global.css");
 
 
 h2 {
@@ -21,7 +21,7 @@ img {
     margin-right: 45px;
 }
 
-/* phone screen.. 767px?*/
+/* small screen */
 @media screen and (max-width: 680px) {
     h2 {
         margin: 0px 0px 30px 0px;

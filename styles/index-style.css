@@ -35,7 +35,7 @@ main {
     border-color: #bd742b95;
 }
 
-/* ipad screen */
+/* medium screen */
 @media screen and (min-width: 679px)  and (max-width: 1080px) {
     #hero img {
         width: 150px;
@@ -47,7 +47,7 @@ main {
     }
 }
 
-/* phone screen.. 767px?*/
+/* small screen */
 @media screen and (max-width: 680px) {
     main {
         margin-top: 150px;
