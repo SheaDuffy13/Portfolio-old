@@ -1,6 +1,5 @@
 @import url("global.css");
 
-/* Body */
 main {
     display: inline-flex;
     justify-content: center;
@@ -22,17 +21,18 @@ main {
 #hero img {
     width: 13vw;
     border-radius: 50%;
-    margin: 20px 30px 30px 30px;
+    margin: 20px 30px 20px 30px;
     border: solid 2px #BD752B;
+    opacity: 0.9;
 }
 #hero p {
     font-size: 1.5rem;
     color: #BD752B;
-    margin-left: 10px;
 }
 
 #hero img:hover {
     border-color: #bd742b95;
+    opacity: 1;
 }
 
 /* medium screen */
@@ -45,22 +45,22 @@ main {
         height: 48vh;
         margin-top: 60px;
     }
+    #hero p {
+        margin-right: 10px;
+    }
 }
 
 /* small screen */
 @media screen and (max-width: 680px) {
     main {
         margin-top: 150px;
-        /* margin-left: -1vw; */
         margin-bottom: 10vh;
     }
     #hero {
         position: relative;
         flex-direction: column;
-        /* flex-wrap: wrap; */
         width: 70%;
         height: 40%;
-        /* margin-top: 50%; */
         text-align: center;
         padding: 2rem;
         background-color: #13131300;
@@ -69,6 +69,9 @@ main {
     #hero img {
         width: 140px;
         border-radius: 50%;
-        /* margin: 0%; */
+        margin-left: 40px;
+    }
+    #hero p {
+        margin-left: 8px;
     }
 }
