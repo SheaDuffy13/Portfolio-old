@@ -115,7 +115,7 @@ footer {
 }
 
 /* medium screen */
-@media screen and (min-width: 679px)  and (max-width: 1080px) {
+@media screen and (min-width: 679px)  and (max-width: 992px) {
     .nav-links a {
         padding: 10px;
         font-size: 1.5rem;
