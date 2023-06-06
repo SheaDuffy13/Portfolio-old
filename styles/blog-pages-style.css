@@ -15,7 +15,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 30px;
 }
 main img {
     margin-right: 45px;
@@ -31,6 +30,16 @@ main img {
 }
 #next-page a:hover {
     background: #00000043;
+}
+
+footer {
+    #social-links {
+        margin-right: 0;
+    }
+    
+    #copyright-footer {
+        margin-right: 0;
+    }
 }
 
 /* small screen */

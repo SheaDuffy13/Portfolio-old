@@ -7,9 +7,10 @@ body {
     box-sizing: border-box;
     background: #131313;
 }
+
 .background-img {
     position: fixed;
-    background: url("../images/smoke-bg-2.jpg") no-repeat center center;
+    background: url("../images/smoke-bg.jpg") no-repeat center center;
     background-size: cover;
     min-height: 100%;
     min-width: 100%;
@@ -24,9 +25,13 @@ main {
     display: flex;
     position: relative;
     justify-content: center;
+    min-height: 65vh;
 }
 
 /* Header */
+header {
+    
+}
 .name {
     display: flex;
     justify-content: center;
@@ -111,8 +116,9 @@ footer {
     padding: 1vw;  
     opacity: 0.6; 
 }
-#social-links div{
-    bottom: 0;
+
+#copyright-footer {
+    margin-right: 35px;
 }
 
 /* medium screen */

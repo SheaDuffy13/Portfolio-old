@@ -5,6 +5,7 @@ main {
     flex-direction: row;
     position: relative;
     flex-wrap: wrap;
+    margin-bottom: 14vh;
 }
 h2 {
     margin-right: 40px;

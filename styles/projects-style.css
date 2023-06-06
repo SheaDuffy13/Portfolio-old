@@ -4,6 +4,7 @@ main {
     display: flex;
     position: relative;
     flex-wrap: wrap;
+    margin-bottom: 27vh;
 }
 
 h2 {
