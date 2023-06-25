@@ -15,7 +15,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin: 35px px 0px 5px;
+    margin: 35px 0px 0px 5px;
     color: #BD752B;
     width: 100%;
     height: auto;
@@ -29,7 +29,7 @@ h2 {
     border: solid 2px #bd742b52;
     border-radius: 5%;
     padding: 10px 0px 0px 0px;
-    margin: 10px;
+    margin: 30px;
 }
 .blog-list a {
     all: unset;

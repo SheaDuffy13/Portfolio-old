@@ -1,6 +1,6 @@
 # T1A2 - Portfolio (old)
 
-[Live Website](https://main--jocular-elf-43a1ca.netlify.app/)
+[Live Website](https://sheaduffy-portfolio-old.netlify.app/)
 
 A class project requiring us to make a portfolio website.
 
